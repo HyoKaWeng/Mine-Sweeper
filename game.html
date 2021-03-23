@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/game.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="pad"></div>
+
+		<div id="ctrl" class="theme">
+			<div id="clock">0</div>
+			<button type="button" id="back" class="but"> 退出 </button>
+		</div>
+
+		<div id="ini_frame">
+			<em>Mine Sweeper</em>
+			<div>
+				雷数同高宽 :
+				<label for=""><input type="radio" name="block_numb" value="8" checked="checked"> 8x8</label>
+				<label for=""><input type="radio" name="block_numb" value="10"> 10x10</label>
+				<label for=""><input type="radio" name="block_numb" value="12"> 12x12</label>
+				<button type="button" id="set_but">play</button>
+			</div>
+		</div>
+		
+		<div id="prompt_level">
+			<div>
+				<p></p>
+				<button type="button"> 确认 </button>
+			</div>
+		</div>
+		
+		<audio id="voi" src="voi/ing.mp3" autoplay loop></audio>		
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="js/game.js" charset="UTF-8"></script>
